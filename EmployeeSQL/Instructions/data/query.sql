@@ -45,10 +45,14 @@ INNER JOIN salaries AS p ON
 p.emp_no=t.emp_no;
 ;
 
-
-
+SELECT * FROM employees;
 
 --List first name, last name, and hire date for employees who were hired in 1986.
+
+SELECT first_name, last_name, hire_date 
+FROM employees
+WHERE hire_date ='%1986'
+
 SELECT * FROM employees;
 
 --List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
