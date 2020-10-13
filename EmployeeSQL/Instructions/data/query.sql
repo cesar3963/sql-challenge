@@ -51,7 +51,7 @@ SELECT * FROM employees;
 
 SELECT first_name, last_name, hire_date 
 FROM employees
-WHERE hire_date ='%1986'
+WHERE hire_date like '%1986' 
 
 SELECT * FROM employees;
 
